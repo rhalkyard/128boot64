@@ -87,7 +87,7 @@ physically present, the KERNAL checks for a cartridge autoboot signature at
 remains intact, and gets jumped to during the boot process.
 
 Since control is handed over to the "cartridge" fairly early on in the boot
-process, we have to "mirror" portions of the KERNAL's `RESET` routine and the
+process, we have to mirror portions of the KERNAL's `RESET` routine and the
 BASIC cold-start code. Once everything is ready for action, we print the
 appropriate `LOAD` and `RUN` incantations to the screen, position the cursor so
 that it will be on the `LOAD` line when BASIC starts, and then inject two
@@ -117,7 +117,7 @@ sector, like the SD2IEC does).
   directories.
 
 - Load program *before* going into 64 mode (MUCH faster on drives that support
-  fast serial, but will need to handle differences in memory layout - ).
+  fast serial, but will need to handle differences in memory layout).
 
 - Allow device number to be overridden, to support booting from one device and
   loading from another.
